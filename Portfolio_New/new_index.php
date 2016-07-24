@@ -7,10 +7,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
     <style>
-        /*body {
+        body {
             overflow-x: hidden;
             overflow-y: scroll;
-        }*/
+        }
         #logo {
             position: relative;
             width: 100%;
@@ -21,8 +21,15 @@
         #image1 {
             background: url("images/img1.jpg") 100% / 150% no-repeat;
         }
+        #image2
+        {
+            background: url("images/img2.jpg") 100% / 150% no-repeat;
+        }
+        #image3
+        {
+            background: url("images/img3.jpg") 100% / 150% no-repeat;
+        }
         .portfolioImg{
-            background-color: red;
             display:inline-block;
             position: relative;
             border-radius:10%;
@@ -35,8 +42,8 @@
     <body>
         <div id="logo"></div>
             <a href="#"><div class="portfolioImg" id="image1"></div></a>
-            <a href="#"><div class="portfolioImg" id="image1"></div></a>
-            <a href="#"><div class="portfolioImg" id="image1"></div></a>
+            <a href="#"><div class="portfolioImg" id="image2"></div></a>
+            <a href="#"><div class="portfolioImg" id="image3"></div></a>
 
     </body>
     <script>
