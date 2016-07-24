@@ -52,9 +52,7 @@
      text-shadow: 0 1px 1px #fff;
  }
  body {
-    background:url('images/bg2.gif');
-    height:100%;
-    width:100%;
+    background-color: #ffff99;
 }
     </style>
 </head>
