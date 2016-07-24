@@ -39,20 +39,10 @@
             width: 250px;
             height: 200px;
         }
-        .webDiv{
+        .fullDiv{
             width: 100%;
             height: 100%;
         }
-        .formDiv{
-            width: 100%;
-            height: 100%;
-        }
-        .transationDiv{
-            width: 100%;
-            height: 100%;
-        }
-
-
     </style>
     </head>
 
@@ -63,13 +53,13 @@
             <a href="#form"><div class="portfolioImg" id="image2"></div></a>
             <a href="#translation"><div class="portfolioImg" id="image3"></div></a>
         </div>
-        <div id="web" class="webDiv">
+        <div id="web" class="fullDiv">
             <div class="portfolioImg" id="image4"></div>
         </div>
-        <div id="form" class="formDiv">
+        <div id="form" class="fullDiv">
             <div class="portfolioImg" id="image4"></div>
         </div>
-        <div id="translation" class="translationDiv">
+        <div id="translation" class="fullDiv">
             <div class="portfolioImg" id="image4"></div>
         </div>
     </body>
