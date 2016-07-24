@@ -20,15 +20,15 @@
         background-size: 236px 75px;
     }
     #image1 {
-        background: url("images/1.png") 100% / 150% no-repeat;
+        background: url("images/bg5.gif") 100% / 150% no-repeat;
     }
     #image2
     {
-        background: url("images/2.png") 100% / 150% no-repeat;
+        background: url("images/bg4.gif") 100% / 150% no-repeat;
     }
     #image3
     {
-        background: url("images/3.png") 100% / 150% no-repeat;
+        background: url("images/i1.gif") 100% / 150% no-repeat;
     }
     #image4 {
         background: url("images/img4.jpg") 100% / 150% no-repeat;
@@ -84,9 +84,9 @@ $(document).ready(function() {
     TweenLite.to(logo, 2, {left:"80%", ease:Bounce.easeOut});
     //TweenMax.from(image1,2,{opacity:0, y:200,rotation:360,scale:2,delay:0.5});
     // TweenMax.staggerFrom(".portfolioImg",1,{opacity:0, y:200,rotation:-360,delay:0.5});
-    TweenMax.staggerFrom("#image1",1,{opacity:0, left:500,rotation:-360,delay:0.1});
+    TweenMax.staggerFrom("#image1",1,{opacity:0, left:500,rotation:-360,delay:1.50});
     TweenMax.staggerFrom("#image2",1.25,{opacity:0, y:-600,rotation:-360,delay:1.5});
-    TweenMax.staggerFrom("#image3",0.75,{opacity:0, right:-500,rotation:-360,delay:0.75});
+    TweenMax.staggerFrom("#image3",0.75,{opacity:0, right:-500,rotation:-360,delay:1.75});
     // TweenMax.staggerFrom("#image3",0.5,{right:"80%", ease:Bounce.easeOut});
    // TweenMax.staggerFrom(image3,5,{opacity:0, y:200,rotation:360,scale:2, delay:0.5});
 
