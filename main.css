@@ -1,0 +1,2305 @@
+
+@font-face {
+    font-family: 'amatic_scbold';
+    src: url('../assets/fonts/amaticsc-bold-webfont.eot');
+    src: url('../assets/fonts/amaticsc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/amaticsc-bold-webfont.woff') format('woff'),
+         url('../assets/fonts/amaticsc-bold-webfont.ttf') format('truetype'),
+          url('../assets/fonts/amaticsc-bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'grand_hotelregular';
+    src: url('../assets/fonts/grandhotel-regular-webfont.eot');
+    src: url('../assets/fonts/grandhotel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/grandhotel-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/grandhotel-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/grandhotel-regular-webfont.svg#grand_hotelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('../assets/fonts/amaticsc-regular-webfont.eot');
+    src: url('../assets/fonts/amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/amaticsc-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/amaticsc-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/amaticsc-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	font-family: 'amatic_scregular';
+	src: url('../assets/fonts/amaticsc-regular-webfont.svg') format('svg');
+
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	font-family: 'amatic_scbold';
+	src: url('../assets/fonts/amaticsc-bold-webfont.svg') format('svg');
+
+	}
+}
+
+
+
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	font-family: 'amatic_scregular', serif;
+	color:white;
+	-webkit-user-select: none;
+	background-color:#FEC901;
+	background-image: url(../assets/gfx/bg.jpg);
+}
+#pole_mobile {
+	display:none;
+}
+#pole {
+	/*width:4990px;*/
+	width: 5470px;
+	/*height:3240px;*/
+	height:3508px;
+	position:absolute;
+	cursor:move;
+	background-image: url(../assets/gfx/bg.jpg);
+	-webkit-user-select: none;
+	z-index:0;
+	background-color:#FEC901;
+}
+#logo { 
+	width:177px;
+	height:119px;
+	background-image: url(../assets/gfx/logo.png);	
+	float:left;
+	display:block;
+}
+#top {
+	width:960px;
+	margin:0 auto;
+	height:20px;
+	-webkit-user-select: none;
+	position:relative;
+}
+.topWrapper {
+	width:960px;
+	height:20px;
+	float:left;
+	position:fixed;
+	top:0px;
+	left:50%;
+	margin-left:-480px;
+	z-index:9999;
+}
+#menu {
+	float:right;
+	margin-top:10px;
+	-webkit-user-select: none;
+}
+#menu a {
+	display:block;
+	float:left;
+	font-size:26px;
+	color:white;
+	text-decoration:none;
+	margin-left:21px;
+	margin-top:-200px;
+	text-shadow: 0px 0px 4px #e3a603;
+    /*filter: dropshadow(color=#e3a603, offx=0, offy=0);*/	
+	font-family:'amatic_scbold';
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+#preloader {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	color: #df0048;
+	background-color:#f0a700;
+	z-index:999999;
+}
+#preloaderMain {
+	width:442px;
+	height:63px;
+	position:absolute;
+	padding-top:260px;
+	font-size:40px;
+	top:50%;
+	left:50%;
+	margin-left:-221px;
+	margin-top:-161px;
+	color:#fecc00;
+	background-image: url(../assets/gfx/loading.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	font-family: 'amatic_scbold';
+}
+
+.pageContainer {
+	position:absolute;
+	z-index:1;
+	/* border:1px solid red;*/
+	width:960px;
+	min-height:660px;
+	background-image: url(../assets/gfx/contentBgGlow.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+}
+
+#kurkawolna{
+	 left: 443px;
+    top: 779px;
+	height:660px;
+}
+#czytnik {
+	left: 943px;
+    top: 29px;
+	height:660px;
+}
+#slady {
+	width:4990px;
+	height:3240px;
+	position:absolute;
+	/*background-image: url(../assets/gfx/slady.png);*/
+	left:240px;
+	top:0px;
+	z-index:1;
+	background-repeat:no-repeat;
+}
+
+.wolne_kurki {
+	width:129px;
+	height:43px;
+	background-image: url(../assets/gfx/wolnaKurka.png);
+	position:absolute;
+	z-index:5;
+}
+
+#menu_linia {
+	width: 720px;
+	height: 12px;
+	background-image: url(../assets/gfx/menu_long_line.png);
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	opacity:0;
+	
+}
+
+.active_menu {
+	position:absolute;
+	top:47px;
+}
+#active_kurkawolna {
+	width:91px;
+	height:13px;
+	background-image: url(../assets/gfx/active_kurka_wolna.png);
+	left:255px;
+	opacity:0;
+}
+#active_majsterszef {
+	width:78px;
+	height:13px;
+	background-image: url(../assets/gfx/active_majsterszef.png);
+	left: 602px;
+	top: 42px;
+	opacity:0;
+}
+#active_czytnik {
+	width:78px;
+	height:13px;
+	background-image: url(../assets/gfx/active_majsterszef.png);
+	left: 510px;
+	top: 42px;
+	opacity:0;
+}
+#active_szkolkawartosci {
+	width:123px;
+	height:18px;
+	background-image: url(../assets/gfx/szkolka/active_szkolkawartosci.png);
+	left: 370px;
+	top: 45px;
+	opacity:0;
+}
+#active_pageGdzieKupic {
+	width:78px;
+	height:15px;
+	background-image: url(../assets/gfx/active_pageGdzieKupic.png);
+	left: 702px;
+	top: 40px;
+	opacity:0;
+}
+#active_kontakt {
+	width:54px;
+	height:12px;
+	background-image: url(../assets/gfx/active_kontakt.png);
+	left: 806px;
+	top: 42px
+	opacity:0;
+}
+#active_pageSkadPochodzi {
+	width:78px;
+	height:15px;
+	background-image: url(../assets/gfx/active_pageGdzieKupic.png);
+	left: 876px;
+	top: 40px;
+	opacity:0;
+}
+
+.kamien {
+	position:absolute;
+	z-index:1;
+}
+.kamien img {
+	position:absolute;
+	z-index:1;
+}
+#kamien-1 .kamien_shadow {
+	position:absolute;
+	width:28px;
+	height:20px;
+	top:4px;
+	left:4px;
+	background-image: url(../assets/gfx/kamien_shadow.png);
+	z-index:0;
+}
+#kamien-1 {
+	top:2087px;
+	left:2299px;
+	width:28px;
+	height:20px;
+}
+#kamien-2 {
+	top:2377px;
+	left:2597px;
+	width:30px;
+	height:20px;
+}
+#kamien-2 .kamien_shadow {
+	position:absolute;
+	width:30px;
+	height:20px;
+	top:1px;
+	left:1px;
+	z-index:0;
+}
+#kamien-3 {
+	left:3118px;
+	top:1127px;
+	width:31px;
+	height:21px;
+}
+#kamien-3 .kamien_shadow {
+	position:absolute;
+	width:31px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+.kamien_shadow {
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+#kamien-4 {
+	left:3740px;
+	top:1900px;
+	width:34px;
+	height:21px;
+}
+#kamien-4 .kamien_shadow {
+	position:absolute;
+	width:34px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-5 {
+	left:4771px;
+	top:2110px;
+	width:43px;
+	height:21px;
+}
+#kamien-5 .kamien_shadow {
+	position:absolute;
+	width:43px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-6 {
+	left:4371px;
+	top:2564px;
+	width:22px;
+	height:14px;
+}
+#kamien-6 .kamien_shadow {
+	position:absolute;
+	width:22px;
+	height:14px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-7 {
+	left:4306px;
+	top:2586px;
+	width:34px;
+	height:21px;
+}
+#kamien-7 .kamien_shadow {
+	position:absolute;
+	width:34px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-8 {
+	left:2831px;
+	top:3015px;
+	width:22px;
+	height:14px;
+}
+#kamien-8 .kamien_shadow {
+	position:absolute;
+	width:22px;
+	height:14px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-9 {
+	left:2800px;
+	top:2985px;
+	width:34px;
+	height:21px;
+}
+#kamien-9 .kamien_shadow {
+	position:absolute;
+	width:34px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-10 {
+	top: 2970px;
+	left: 770px;
+	width:30px;
+	height:20px;
+}
+#kamien-10 .kamien_shadow {
+	position:absolute;
+	width:30px;
+	height:20px;
+	top:1px;
+	left:1px;
+	z-index:0;
+}
+#kamien-11 .kamien_shadow {
+	position:absolute;
+	width:28px;
+	height:20px;
+	top:4px;
+	left:4px;
+	z-index:0;
+}
+#kamien-11 {
+	top:2634px;
+	left:771px;
+	width:28px;
+	height:20px;
+}
+#kamien-12 .kamien_shadow {
+	position:absolute;
+	width:28px;
+	height:20px;
+	top:4px;
+	left:4px;
+	z-index:0;
+}
+#kamien-12 {
+	top:1254px;
+	left:659px;
+	width:28px;
+	height:20px;
+}
+#kamien-13 {
+	left:1735px;
+	top:617px;
+	width:31px;
+	height:21px;
+}
+#kamien-13 .kamien_shadow {
+	position:absolute;
+	width:31px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-14 {
+	left:3572px;
+	top:643px;
+	width:31px;
+	height:21px;
+}
+#kamien-14 .kamien_shadow {
+	position:absolute;
+	width:31px;
+	height:21px;
+	top:2px;
+	left:2px;
+	z-index:0;
+}
+#kamien-15 {
+	top:386px;
+	left:4365px;
+	width:30px;
+	height:20px;
+}
+#kamien-15 .kamien_shadow {
+	position:absolute;
+	width:30px;
+	height:20px;
+	top:1px;
+	left:1px;
+	z-index:0;
+}
+.kwiaty {
+	position:absolute;
+	z-index:2;
+}
+.drzewo {
+	position:absolute;
+	z-index:2;
+}
+.trawa {
+	position:absolute;
+	z-index:999;
+}
+.chmura {
+	position:absolute;
+	z-index: 20 !important;
+}
+#chmura-1 {
+	top: 1407px;
+	left: 1162px;
+	width:415px;
+	height:197px;
+	background-image: url(../assets/gfx/chmura.png);
+}
+#chmura-2 {
+	top: 260px;
+	left: 2300px;
+	width:573px;
+	height:271px;
+	background-image: url(../assets/gfx/chmura2.png);
+}
+#chmura-3 {
+	top: 990px;
+	left: 250px;
+	width:259px;
+	height:84px;
+	background-image: url(../assets/gfx/chmura3.png);
+}
+#chmura-4 {
+	top: 2600px;
+	left: 0px;
+	width:678px;
+	height:243px;
+	background-image: url(../assets/gfx/chmura4.png);
+}
+#chmura-5 {
+	left: 2435px;
+    top: 2642px;
+	width:395px;
+	height:128px;
+	background-image: url(../assets/gfx/chmura5.png);
+}
+#chmura-6 {
+	left: 2040px;
+    top: 3120px;
+	width:678px;
+	height:243px;
+	background-image: url(../assets/gfx/chmura6.png);
+}
+#chmura-7 {
+	left: 4440px;
+    top: 2920px;
+	width:947px;
+	height:451px;
+	background-image: url(../assets/gfx/chmura7.png);
+	opacity:1 !important;
+}
+#chmura-8 {
+	left: 4610px;
+    top: 832px;
+	width:612px;
+	height:199px;
+	background-image: url(../assets/gfx/chmura8.png);
+}
+#trawa-1 {
+	top: 1888px;
+	left: 3692px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-2 {
+	top: 1869px;
+	left: 4231px;
+	width:30px;
+	height:31px;
+	background-image: url(../assets/gfx/trawa-2.png);
+}
+#trawa-3 {
+	top: 1205px;
+	left: 3987px;
+	width:30px;
+	height:31px;
+	background-image: url(../assets/gfx/trawa-2.png);
+}
+#trawa-4 {
+	top: 2410px;
+	left: 4648px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-5 {
+	top: 2965px;
+	left: 2858px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-6 {
+	top: 2928px;
+	left: 771px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+
+#trawa-7 {
+	top: 1728px;
+	left: 786px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-8 {
+	top: 1325px;
+	left: 542px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-9 {
+	top: 755px;
+	left: 493px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-10 {
+	top: 758px;
+	left: 568px;
+	width:30px;
+	height:31px;
+	background-image: url(../assets/gfx/trawa-2.png);
+}
+#trawa-11 {
+	top: 149px;
+	left: 779px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-12 {
+	top: 737px;
+	left: 2580px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-13 {
+	top: 567px;
+	left: 4748px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-14 {
+	top: 2204px;
+	left: 1621px;
+	width:45px;
+	height:43px;
+	background-image: url(../assets/gfx/trawa-1.png);
+}
+#trawa-15 {
+	top: 2475px;
+	left: 1956px;
+	width:30px;
+	height:31px;
+	background-image: url(../assets/gfx/trawa-2.png);
+}
+#kwiaty-1 {
+	top: 1347px;
+	left: 1652px;
+	width:242px;
+	height:254px;
+	background-image: url(../assets/gfx/kwiaty-1.png);
+}
+#kwiaty-2 {
+	top: 1882px;
+	left: 3700px;
+	width:237px;
+	height:215px;
+	background-image: url(../assets/gfx/kwiaty-2.png);
+}
+#kwiaty-3 {
+	top: 1970px;
+	left: 4640px;
+	width:54px;
+	height:60px;
+	background-image: url(../assets/gfx/kwiaty-3.png);
+}
+#kwiaty-4 {
+	top: 2746px;
+	left: 4003px;
+	width:267px;
+	height:199px;
+	background-image: url(../assets/gfx/kwiaty-4.png);
+}
+#kwiaty-5 {
+	top: 2304px;
+	left: 2953px;
+	width:62px;
+	height:100px;
+	background-image: url(../assets/gfx/kwiaty-5.png);
+}
+#kwiaty-6 {
+	top: 2853px;
+	left:2238px;
+	width:66px;
+	height:61px;
+	background-image: url(../assets/gfx/kwiaty-6.png);
+}
+#kwiaty-7 {
+	top: 2801px;
+	left:1065px;
+	width:395px;
+	height:140px;
+	background-image: url(../assets/gfx/kwiaty-7.png);
+}
+#kwiaty-8 {
+	top: 1738px;
+	left:1036px;
+	width:89px;
+	height:80px;
+	background-image: url(../assets/gfx/kwiaty-8.png);
+}
+#kwiaty-9 {
+	top: 1325px;
+	left:825px;
+	width:74px;
+	height:59px;
+	background-image: url(../assets/gfx/kwiaty-9.png);
+}
+#kwiaty-10 {
+	top: 1293px;
+	left:454px;
+	width:87px;
+	height:56px;
+	background-image: url(../assets/gfx/kwiaty-10.png);
+}
+#kwiaty-11 {
+	top: 768px;
+	left:496px;
+	width:66px;
+	height:58px;
+	background-image: url(../assets/gfx/kwiaty-11.png);
+}
+#kwiaty-12 {
+	top: 858px;
+	left:1902px;
+	width:80px;
+	height:50px;
+	background-image: url(../assets/gfx/kwiaty-12.png);
+}
+#kwiaty-13 {
+	top: 714px;
+	left:1992px;
+	width:86px;
+	height:103px;
+	background-image: url(../assets/gfx/kwiaty-13.png);
+}
+#kwiaty-14 {
+	top: 900px;
+	left:2310px;
+	width:147px;
+	height:105px;
+	background-image: url(../assets/gfx/kwiaty-14.png);
+}
+#kwiaty-15 {
+	top: 734px;
+	left:2642px;
+	width:53px;
+	height:45px;
+	background-image: url(../assets/gfx/kwiaty-15.png);
+}
+#kwiaty-16 {
+	top: 341px;
+	left:4020px;
+	width:217px;
+	height:254px;
+	background-image: url(../assets/gfx/kwiaty-16.png);
+}
+#kwiaty-17 {
+	top: 1193px;
+	left:5018px;
+	width:128px;
+	height:81px;
+	background-image: url(../assets/gfx/kwiaty-17.png);
+}
+#drzewo-1 {
+	top: 1026px;
+	left:3646px;
+	width:50px;
+	height:51px;
+	background-image: url(../assets/gfx/drzewo-2.png);
+}
+#drzewo-2 {
+	top: 1043px;
+	left:3754px;
+	width:50px;
+	height:51px;
+	background-image: url(../assets/gfx/drzewo-2.png);
+}
+#drzewo-3 {
+	top: 1062px;
+	left:3858px;
+	width:50px;
+	height:51px;
+	background-image: url(../assets/gfx/drzewo-2.png);
+}
+#drzewo-4 {
+	top: 1098px;
+	left:3952px;
+	width:41px;
+	height:43px;
+	background-image: url(../assets/gfx/drzewo-1.png);
+}
+#drzewo-5 {
+	top: 1202px;
+	left:4287px;
+	width:41px;
+	height:43px;
+	background-image: url(../assets/gfx/drzewo-1.png);
+}
+#drzewo-6 {
+	top: 1195px;
+	left:4355px;
+	width:73px;
+	height:82px;
+	background-image: url(../assets/gfx/drzewo-3.png);
+}
+#drzewo-7 {
+	top: 2778px;
+	left:5047px;
+	width:50px;
+	height:51px;
+	background-image: url(../assets/gfx/drzewo-2.png);
+}
+#drzewo-8 {
+	top: 2843px;
+	left:5067px;
+	width:159px;
+	height:157px;
+	background-image: url(../assets/gfx/drzewo-5.png);
+}
+#drzewo-9 {
+	top: 2167px;
+	left:3045px;
+	width:73px;
+	height:82px;
+	background-image: url(../assets/gfx/drzewo-3.png);
+}
+#drzewo-10 {
+	top: 2209px;
+	left:3152px;
+	width:113px;
+	height:127px;
+	background-image: url(../assets/gfx/drzewo-4.png);
+}
+#drzewo-11 {
+	top: 2759px;
+	left:1615px;
+	width:73px;
+	height:82px;
+	background-image: url(../assets/gfx/drzewo-3.png);
+}
+#drzewo-12 {
+	top: 2794px;
+	left:847px;
+	width:50px;
+	height:51px;
+	background-image: url(../assets/gfx/drzewo-2.png);
+}
+#drzewo-13 {
+	top: 1481px;
+	left:584px;
+	width:113px;
+	height:127px;
+	background-image: url(../assets/gfx/drzewo-4.png);
+}
+#drzewo-14 {
+	top: 445px;
+	left:1923px;
+	width:113px;
+	height:127px;
+	background-image: url(../assets/gfx/drzewo-4.png);
+}
+#drzewo-15 {
+	top: 425px;
+	left:2053px;
+	width:50px;
+	height:51px;
+	background-image: url(../assets/gfx/drzewo-2.png);
+}
+.inView {
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.sprite {
+    background-image: url(../assets/gfx/kurka_wolna_spritesheet2.png);
+    background-repeat: no-repeat;
+    display: block;
+   
+}
+/*xxx*/
+.sprite-1, .idzie {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -5px !important;
+}
+
+.sprite-2,.stoi {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -5px;
+}
+
+.sprite-3 {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -5px;
+}
+
+.sprite-4, .dziobie {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -215px;
+}
+
+.sprite-5 {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -215px;
+}
+
+.sprite-6, .patrzy_lewo {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -215px;
+}
+
+.sprite-7, .patrzy_prawo {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -425px;
+}
+
+.sprite-8, .biegnie1 {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -425px;
+}
+
+.sprite-9, .biegnie2 {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -425px;
+}
+#jezioro {
+	position:absolute;
+	width:934px;
+	height:535px;
+	background-image:url(../assets/gfx/jezioro.png);
+	left:1640px;
+	top:1969px;
+}
+#jezioro1 {
+	position:absolute;
+	width:727px;
+	height:403px;
+	background-image:url(../assets/gfx/jezioro1.png);
+	left:80px;
+	top:70px;
+}
+#jezioro2 {
+	position:absolute;
+	width:469px;
+	height:313px;
+	background-image:url(../assets/gfx/jezioro2.png);
+	left:110px;
+	top:120px;
+}
+.jajko_ciekawostka {
+	position:absolute;
+	z-index:4;
+	width:849px;
+	height:600px;
+	display:block;
+}
+.left_rotation {
+	transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+}
+.right_rotation {
+	transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+}
+.jajko_small_left {
+	transform:scale(0.6,0.6) rotate(10deg);
+	-ms-transform:scale(0.6,0.6) rotate(10deg);
+	-webkit-transform:scale(0.6,0.6) rotate(10deg);
+}
+.jajko_small_right {
+	transform:scale(0.6,0.6) rotate(-10deg);
+	-ms-transform:scale(0.6,0.6) rotate(-10deg);
+	-webkit-transform:scale(0.6,0.6) rotate(-10deg);	
+}
+.jajko {
+	position:absolute;
+	width:178px;
+	height:225px;
+	background-image:url(../assets/gfx/jajko_big.png);
+	left:50%;
+	top:50%;
+	margin-left:-89px;
+	margin-top:-112px;
+	cursor:pointer;
+	opacity:1;
+	z-index:20; 
+}
+#galaktyka {
+	left: 3314px;
+    top: 1954px;
+}
+#baw {
+	left: 400px;
+    top: 1300px;
+}
+#beee {
+	left:2179px;
+	top:544px;
+}
+#chwal {
+	left:1800px;
+	top:2500px;
+}
+#mek {
+	left:3020px;
+	top:1160px;
+}
+#fe {
+	left:4000px;
+	top:550px;
+}
+#wl {
+	left:440px;
+	top:2620px;
+}
+#czek {
+	left: 1180px;
+    top: 1620px;
+}
+#jedz {
+	left:1300px;
+	top:770px;
+}
+#zap {
+	left:2600px;
+	top:2200px;
+}
+#kop {
+	left:2900px;
+	top:640px;
+}
+#fer {
+	 left: 50%;
+	 margin-left:-425px;
+	 margin-top:-300px;
+    top: 50%;
+    position:fixed;
+    z-index:3;
+    display:none;
+}
+#piejo {
+	left:4538px;
+	top:2328px;
+}
+.question_mark {
+	font-size:76px;
+	color:#e50069;
+	font-family:grand_hotelregular;
+	position:absolute;
+	top: 80px;
+	left: 73px;
+	z-index:100;
+}
+.ciekawostka {
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:10;
+	display:none;
+}
+#fer .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#zap .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#kop .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#czek .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#jedz .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#wl .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#galaktyka .ciekawostka {
+	background-image:url(../assets/gfx/galaktyka_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#chwal .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#mek .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#baw .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#beee .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#piejo .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#fe .ciekawostka {
+	background-image:url(../assets/gfx/piejo_bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	opacity:0;
+}
+#zacznij_gotowac {
+	width:220px;
+	height:41px;
+	background-image:url(../assets/gfx/zacznij_gotowac.png);
+	position:absolute;
+	left: 65px;
+	top: 470px;
+	cursor:pointer;
+}
+#kosmita {
+	left:130px;
+	-moz-transform: matrix(1, 0, 0, 1, 250, -60);
+	-webkit-transform: matrix(1, 0, 0, 1, 250, -60);
+	position:absolute;
+	width:114px;
+	height:95px;
+	background-image:url(../assets/gfx/kosmita.png);
+	z-index:12;
+}
+#satelita {
+	
+	left:130px;
+	-moz-transform: matrix(1, 0, 0, 1, 250, -60);
+	-webkit-transform: matrix(1, 0, 0, 1, 250, -60);
+	position:absolute;
+	width:85px;
+	height:112px;
+	background-image:url(../assets/gfx/satelita.png);
+	z-index:12;
+}
+#galaktyczna_kura {
+	width:176px;
+	height:225px;
+	background-image:url(../assets/gfx/galaktyka_kura.png);
+	position:absolute;
+	left:100px;
+	top:240px;
+	z-index:10;
+}
+#gal_txt1 span {
+	font-size:54px;
+}
+#gal_txt2 span {
+	font-size:24px;
+}
+#gal_txt1 {
+	font-size:54px;
+	position:absolute;
+	left:280px;
+	top:270px;
+}
+#gal_txt2 {
+	font-size:24px;
+	position:absolute;
+	left:307px;
+	top:330px;
+}
+#orbita {
+	width:341px;
+	height:236px;
+	position:absolute;
+	left:421px;
+	top:36px;
+	z-index:20;
+	background-image:url(../assets/gfx/orbita.png);
+}
+#jajo_orbitalne {
+	width:189px;
+	height:234px;
+	left: 513px;
+    position: absolute;
+    top: -24px;
+	z-index:60;
+	background-image:url(../assets/gfx/jajo_orbitalne.png);
+}
+.share {
+	width:179px;
+	height:41px;
+	background-image:url(../assets/gfx/share.png);
+	left: 240px;
+    position: absolute;
+    top: 470px;
+	cursor:pointer;
+	z-index:100;
+}
+.save {
+	width:149px;
+	height:41px;
+	background-image:url(../assets/gfx/save.png);
+	left: 460px;
+    position: absolute;
+    top: 470px;
+	cursor:pointer;
+	z-index:100;
+}
+.cz_jajko {
+	width:135px;
+	height:166px;
+	background-image:url(../assets/gfx/jajco.png);
+	left: 140px;
+    top: 50px;
+    position: absolute;
+}
+.czytnik_head {
+	color:#e50069;
+	font-size:40px;
+	 font-family: 'amatic_scbold';
+	 left: 340px;
+top: 120px;
+    position: absolute;
+}
+.czytnik_desc {
+	font-size:24px;
+	 font-family: 'amatic_scbold';
+	 left: 340px;
+top: 170px;
+    position: absolute;
+}
+.kuura_desc {
+	font-size:24px;
+	font-family: 'amatic_scbold';
+	left: 335px;
+	top: 660px;
+    position: absolute;
+    width: 278px;
+	text-align:center;
+}
+.dot-line {
+	width:204px;
+	height:361px;
+	background-image:url(../assets/gfx/dot-line.png);
+	left: 193px;
+	top: 220px;
+    position: absolute;
+}
+.trawka {
+	width:278px;
+	height:19px;
+	background-image:url(../assets/gfx/trawka.png);
+	left: 333px;
+top: 600px;
+    position: absolute;
+}
+.kuura {
+	width:236px;
+	height:254px;
+	background-image:url(../assets/gfx/kuura.png);
+	left: 353px;
+top: 380px;
+    position: absolute;
+}
+.kuury {
+	width:380px;
+	height:266px;
+	background-image:url(../assets/gfx/szikens.png);
+	left: 263px;
+top: 360px;
+    position: absolute;
+    opacity:0;
+}
+.klatka {
+	width:389px;
+	height:281px;
+	background-image:url(../assets/gfx/klatka.png);
+	left: 263px;
+top: 360px;
+    position: absolute;
+    opacity:0;
+}
+.slonko {
+	width:112px;
+	height:122px;
+	background-image:url(../assets/gfx/slonko.png);
+	left: 613px;
+top: 260px;
+    position: absolute;
+}
+.eko_papu {
+	width:55px;
+	height:46px;
+	background-image:url(../assets/gfx/eko_papu.png);
+	left: 646px;
+top: 490px;
+    position: absolute;
+}
+.arr_up {
+	left: 197px;
+	top:100px;
+	cursor:pointer;
+}
+.arr_down {
+	left: 197px;
+	top:170px;
+	cursor:pointer;
+}
+.kuura_desc {
+	
+}
+.code_choice {
+	position: absolute;
+	left: 194px;
+	top: 124px;
+	width: 20px;
+	height: 30px;
+	font-size: 40px;
+	color: #fecc00;
+}
+.ciekawostka_zamknij {
+	width:71px;
+	height:71px;
+	background-image:url(../assets/gfx/ciekawostka_zamknij.png);
+	position:absolute;
+	right:50px;
+	top:70px;
+	cursor:pointer;
+	z-index:99990;
+}
+#piejo_kura {
+	width:156px;
+	height:334px;
+	background-image:url(../assets/gfx/piejo_kura.png);
+	position:absolute;
+	left:70px;
+	bottom:47px;
+	z-index:50;
+}
+.kreskii {
+	width:785px;
+	height:588px;
+	background-image:url(../assets/gfx/piejo_kreski.png);
+	position:absolute;
+	left:45px;
+	top:0px;
+	z-index:60;
+}
+#piejo_kreski {
+	width:785px;
+	height:588px;
+	background-image:url(../assets/gfx/piejo_kreski.png);
+	position:absolute;
+	left:45px;
+	top:0px;
+	z-index:60;
+}
+#piejo_kura_kreski div {
+	width:144px;
+	height:223px;
+	background-image:url(../assets/gfx/piejo_kura_kreski.png);
+}
+#piejo_kura_kreski {
+	width:144px;
+	height:223px;
+	position:absolute;
+	left:75px;
+	top:180px;
+	z-index:70;
+}
+#piejo_kogut {
+	width:48px;
+	height:68px;
+	background-image:url(../assets/gfx/piejo_kogut.png);
+	position:absolute;
+	left:405px;
+	top:60px;
+	z-index:70;
+}
+#piejo_piejo1 {
+	color:#e50069;
+	font-size:120px;
+	font-family: 'amatic_scbold';
+	position:absolute;
+	left:260px;
+	top:150px;
+}
+#piejo_kury_kreski {
+	width:165px;
+	height:7px;
+	background-image:url(../assets/gfx/piejo_left.png);
+	 left: 256px;
+    position: absolute;
+    top: 280px;
+}
+
+#piejo_kury {
+	color:#fecd07;
+	font-size:34px;
+	font-family:grand_hotelregular;
+	 left: 316px;
+    position: absolute;
+    top: 265px;
+}
+
+#piejo_piejo2 {
+	color:#e50069;
+	font-size:120px;
+	font-family: 'amatic_scregular';
+	left: 260px;
+    position: absolute;
+    top: 312px;
+}
+#piejo_nie {
+	color:#e50069;
+	font-size:34px;
+	font-family:grand_hotelregular;
+	left: 526px;
+    position: absolute;
+    top: 140px;
+    
+}
+#piejo_nie_kreski{
+	width:277px;
+	height:8px;
+	background-image:url(../assets/gfx/piejo_right.png);
+	 left: 446px;
+    position: absolute;
+    top: 157px;
+}
+#piejo_koguta{
+	color:#fecd07;
+	font-size:142px;
+	font-family: 'amatic_scbold';
+	left: 442px;
+    position: absolute;
+    top: 202px;
+}
+#piejo_kreski2{
+	width:266px;
+	height:64px;
+	background-image:url(../assets/gfx/piejo_right2.png);
+	left: 453px;
+    position: absolute;
+    top: 360px;
+}
+#ani_kura {
+	 background-image: url("../assets/gfx/bee6.png");
+    height: 336px;
+    left: 291px;
+    position: absolute;
+    top: 100px;
+    width: 202px;
+}
+.ani_kura_paczy {
+	 background-image: url("../assets/gfx/bee6_2.png") !important;
+}
+#bee_ani {
+	color: #E50069;
+    font-family: grand_hotelregular;
+    font-size: 34px;
+    left: 187px;
+    position: absolute;
+    top: 100px;
+}
+#bee1 {
+	width:149px;
+	height:18px;
+	background-image:url(../assets/gfx/bee1.png);
+	left: 140px;
+    position: absolute;
+    top: 140px;
+}
+#bee2 {
+	width:165px;
+	height:7px;
+	background-image:url(../assets/gfx/bee2.png);
+	left: 121px;
+    position: absolute;
+    top: 287px;
+}
+#bee3 {
+	width:197px;
+	height:114px;
+	background-image:url(../assets/gfx/bee3.png);
+	left: 104px;
+    position: absolute;
+    top: 300px;
+}
+#bee4 {
+	width:277px;
+	height:8px;
+	background-image:url(../assets/gfx/bee4.png);
+	left: 457px;
+    position: absolute;
+    top: 164px;
+}
+#bee5 {
+	width:266px;
+	height:64px;
+	background-image:url(../assets/gfx/bee5.png);
+	left: 458px;
+    position: absolute;
+    top: 340px;
+}
+#bee_ani2 {
+	font-size:122px;
+	color:#fecd07;
+	font-family: 'amatic_scbold';
+	left: 143px;
+    position: absolute;
+    top: 166px;
+}
+#bee_ani3 {
+	color:#e50069;
+	font-family:grand_hotelregular;
+	font-size:34px;
+	 left: 190px;
+    position: absolute;
+    top: 270px;
+	
+}
+#bee_ani4 {
+	font-size:110px;
+	color:#fecd07;
+	font-family: 'amatic_scregular';
+	left: 142px;
+    position: absolute;
+    top: 310px;
+}
+#bee_ani5 {
+	color:#fecd07;
+	font-family:grand_hotelregular;
+	font-size:64px;
+	left: 548px;
+    position: absolute;
+    top: 130px;
+}
+#bee_ani6 div {
+	 position: absolute;
+}
+#bee_ani6 {
+	position:absolute;
+	color:#fecd07;
+	font-family:amatic_scbold;
+	font-size:130px;
+	left: 420px;
+    position: absolute;
+    top: 210px;
+}
+#ch1 {
+	color: #E50069;
+    font-family: grand_hotelregular;
+    font-size: 34px;
+    left: 200px;
+    position: absolute;
+    top: 220px;
+}
+#ch2 {
+	width:149px;
+	height:18px;
+	background-image:url(../assets/gfx/bee1.png);
+	left: 150px;
+    position: absolute;
+    top: 260px;
+}
+#ch3 {
+	font-size:122px;
+	color:#fecd07;
+	font-family: 'amatic_scbold';
+	left: 118px;
+    position: absolute;
+    top: 296px;
+}
+#ch4 {
+	width:167px;
+	height:29px;
+	background-image:url(../assets/gfx/ch1.png);
+	left: 140px;
+    position: absolute;
+    top: 417px;
+}
+#ch5 {
+	width:78px;
+	height:110px;
+	background-image:url(../assets/gfx/ch2.png);
+	left: 380px;
+    position: absolute;
+    top: 320px;
+}
+#ch6 {
+	color: #fecd07;
+    font-family: grand_hotelregular;
+    font-size: 34px;
+    left: 592px;
+    position: absolute;
+    top: 244px;
+}
+#ch7 {
+	width:277px;
+	height:8px;
+	background-image:url(../assets/gfx/bee4.png);
+	left: 497px;
+    position: absolute;
+    top: 260px;
+}
+#ch8 {
+	font-size:95px;
+	color:#E50069;
+	font-family: 'amatic_scbold';
+	left: 503px;
+    position: absolute;
+    top: 296px;
+}
+#ch9 {
+	color: #fecd07;
+    font-family: grand_hotelregular;
+    font-size: 34px;
+    left: 590px;
+    position: absolute;
+    top: 390px;
+}
+#ch10 {
+	width:277px;
+	height:8px;
+	background-image:url(../assets/gfx/bee4.png);
+	left: 497px;
+    position: absolute;
+    top: 405px;
+}
+#ch11 {
+	width:337px;
+	height:300px;
+	background-image:url(../assets/gfx/ch3.png);
+	left: 217px;
+    position: absolute;
+    top: 15px;
+}
+a#fb {
+	width:60px;
+	height:60px;
+	position:fixed;
+	bottom:0px;
+	right:20%;
+	background-image:url(../assets/gfx/fb.png);
+	cursor:pointer;
+	z-index:99999999999999;
+}
+.bottom_menu {
+	position:fixed;
+	bottom:8px;	
+	right:25%;
+	z-index:99999999999999;
+}
+#polskie_fermy {
+	font-size:30px;
+	cursor:pointer;
+	z-index:99999999999999;
+	font-family: 'amatic_scbold';
+}
+#regulamin {
+	font-size:30px;
+	cursor:pointer;
+	z-index:99999999999999;
+	font-family: 'amatic_scbold';
+	color:white;
+	text-decoration:none;
+}
+
+#b1 {
+	position:absolute;
+	font-size:64px;
+	font-family: grand_hotelregular;
+	color:#fecd07;
+	left: 184px;
+    position: absolute;
+    top: 145px;
+}
+#b2 {
+	width:212px;
+	height:7px;
+	position:absolute;
+	background-image:url(../assets/gfx/b1.png);
+	left: 129px;
+    position: absolute;
+    top: 172px;
+}
+#b3 {
+	position:absolute;
+	font-size:185px;
+	font-family: amatic_scbold;
+	color:#e50069;
+	 left: 126px;
+    position: absolute;
+    top: 221px;
+}
+#b4 div {
+	position:absolute;
+	width:301px;
+	height:137px;
+	background-image:url(../assets/gfx/b2.png);
+}
+#b4 {
+	width:301px;
+	height:137px;
+	position:absolute;
+	
+	left: 76px;
+    position: absolute;
+    top: 223px;
+}
+#b5 {
+	position:absolute;
+	font-size:47px;
+	font-family: grand_hotelregular;
+	color:#e50069;
+	 left: 207px;
+    position: absolute;
+    top: 380px;
+}
+#b6 {
+	width:212px;
+	height:7px;
+	position:absolute;
+	background-image:url(../assets/gfx/b3.png);
+	left: 122px;
+    position: absolute;
+    top: 403px;
+}
+#b7 {
+	position:absolute;
+	font-size:93px;
+	font-family: amatic_scbold;
+	color:#fecd07;
+	left: 380px;
+    position: absolute;
+    top: 170px;
+}
+#b8 {
+	position:absolute;
+	font-size:34px;
+	font-family: grand_hotelregular;
+	color:#e50069;
+	 left: 464px;
+    position: absolute;
+    top: 267px;
+}
+#b9 {
+	width:165px;
+	height:7px;
+	position:absolute;
+	background-image:url(../assets/gfx/b4.png);
+	 left: 393px;
+    position: absolute;
+    top: 281px;
+}
+#b10 {
+	position:absolute;
+	font-size:73px;
+	font-family: amatic_scbold;
+	color:#fecd07;
+	left: 388px;
+    position: absolute;
+    top: 315px;
+}
+#b11 {
+	width:159px;
+	height:38px;
+	position:absolute;
+	background-image:url(../assets/gfx/b5.png);
+	 left: 400px;
+    position: absolute;
+    top: 400px;
+}
+#b12 {
+	width:248px;
+	height:442px;
+	position:absolute;
+	background-image:url(../assets/gfx/b6.png);
+	 left: 578px;
+    position: absolute;
+    top: 104px;
+}
+#fe1 {
+	width:199px;
+	height:289px;
+	position:absolute;
+	background-image:url(../assets/gfx/fe1.png);
+	left: 23px;
+    position: absolute;
+    top: 67px;
+}
+#fe2 {
+	position:absolute;
+	font-size:50px;
+	font-family: amatic_scbold;
+	color:#555555;
+	left: 238px;
+    position: absolute;
+    top: 95px;
+}
+#fe3 {
+	position:absolute;
+	font-size:33px;
+	font-family: amatic_scbold;
+	color:#555555;
+	left: 248px;
+    position: absolute;
+    top: 165px;
+}
+#fe4 {
+	width:172px;
+	height:220px;
+	position:absolute;
+	background-image:url(../assets/gfx/fe2.png);
+	 left: 343px;
+    position: absolute;
+    top: 221px;
+}
+#fe5 div {
+	width:234px;
+	height:124px;
+	position:absolute;
+	background-image:url(../assets/gfx/fe3.png);
+}
+#fe5 {
+	width:234px;
+	height:124px;
+	position:absolute;
+	left: 313px;
+    position: absolute;
+    top: 251px;
+}
+#mek1 {
+	position:absolute;
+	font-size:43px;
+	font-family: amatic_scbold;
+	color:#555555;
+	 left: 228px;
+    position: absolute;
+    top: 105px;
+    text-align:center;
+}
+#mek3 div {
+	width:833px;
+	height:580px;
+	position:absolute;
+	background-image:url(../assets/gfx/mek2.png);
+}
+#mek2 div {
+	width:833px;
+	height:580px;
+	position:absolute;
+	background-image:url(../assets/gfx/mek1.png);
+}
+#mek2 {
+	width:833px;
+	height:580px;
+	position:absolute;
+	 left: 0px;
+    position: absolute;
+    top: 0px;
+}
+#mek3 {
+	width:833px;
+	height:580px;
+	position:absolute;
+	 left: 0px;
+    position: absolute;
+    top: 0px;
+}
+#mek4 {
+	width:556px;
+	height:381px;
+	position:absolute;
+	background-image:url(../assets/gfx/mek3.png);
+	 left: 106px;
+    position: absolute;
+    top: 210px;
+}
+#wl1 {
+	position:absolute;
+	font-size:43px;
+	font-family: amatic_scbold;
+	color:#555555;
+	 left: 208px;
+    position: absolute;
+    top: 125px;
+}
+#wl2 {
+	position:absolute;
+	font-size:43px;
+	font-family: amatic_scbold;
+	color:#555555;
+	left: 558px;
+    position: absolute;
+    top: 125px;
+}
+#wl3 {
+	width:393px;
+	height:518px;
+	position:absolute;
+	background-image:url(../assets/gfx/wl1.png);
+	 left: 196px;
+    position: absolute;
+    top: 40px;
+}
+#jedz1 {
+	width:451px;
+	height:360px;
+	position:absolute;
+	background-image:url(../assets/gfx/jedz1.png);
+	left: 196px;
+    position: absolute;
+    top: 110px;
+}
+#jedz2 {
+	width:128px;
+	height:16px;
+	position:absolute;
+	background-image:url(../assets/gfx/jedz2.png);
+	left: 136px;
+    position: absolute;
+    top: 446px;
+}
+#jedz3 {
+	position:absolute;
+	font-size:108px;
+	font-family: amatic_scbold;
+	color:#e50069;
+	 left: 288px;
+    position: absolute;
+    top: 55px;
+}
+#jedz4 {
+	position:absolute;
+	font-size:52px;
+	font-family: grand_hotelregular;
+	color:#fecd07;
+	left: 324px;
+    position: absolute;
+    top: 145px;
+}
+#jedz5 {
+	width:143px;
+	height:6px;
+	position:absolute;
+	background-image:url(../assets/gfx/jedz3.png);
+	 left: 281px;
+    position: absolute;
+    top: 173px;
+}
+#jedz6 {
+	position:absolute;
+	font-size:124px;
+	font-family: amatic_scbold;
+	color:#fecd07;
+	left: 138px;
+    position: absolute;
+    top: 321px;
+}
+#jedz7 {
+	width:212px;
+	height:109px;
+	position:absolute;
+	background-image:url(../assets/gfx/jedz4.png);
+	left: 98px;
+    position: absolute;
+    top: 320px;
+}
+#jedz8 {
+	position:absolute;
+	font-size:99px;
+	font-family: amatic_scbold;
+	color:#fecd07;
+	 left: 627px;
+    position: absolute;
+    top: 235px;
+}
+#jedz9 {
+	width:188px;
+	height:45px;
+	position:absolute;
+	background-image:url(../assets/gfx/jedz5.png);
+	 left: 626px;
+    position: absolute;
+    top: 340px;
+}
+#czek1 {
+	width:485px;
+	height:365px;
+	position:absolute;
+	background-image:url(../assets/gfx/czek1.png);
+	left: 165px;
+    position: absolute;
+    top: 226px;
+}
+#czek2 {
+	 color: #555555;
+    font-family: amatic_scbold;
+    font-size: 35px;
+    left: 167px;
+    position: absolute;
+    text-align: center;
+    top: 85px;
+    width: 510px;
+}
+#czek3 div {
+width:358px;
+	height:156px;
+	position:absolute;
+	background-image:url(../assets/gfx/czek2.png);
+}
+#czek3 {
+	width:358px;
+	height:156px;
+	position:absolute;
+	 left: 116px;
+    position: absolute;
+    top: 230px;
+}
+#czek4 div {
+	width:590px;
+	height:203px;
+	position:absolute;
+	background-image:url(../assets/gfx/czek3.png);
+}
+#czek4 {
+	width:590px;
+	height:203px;
+	position:absolute;
+	 left: 156px;
+    position: absolute;
+    top: 250px;
+}
+#zap1 {
+	width:477px;
+	height:384px;
+	position:absolute;
+	background-image:url(../assets/gfx/zap1.png);
+	left: 20px;
+    position: absolute;
+    top: 142px;
+}
+#zap2 {
+	width:477px;
+	height:382px;
+	position:absolute;
+	background-image:url(../assets/gfx/zap2.png);
+	left: 353px;
+    position: absolute;
+    top: 142px;
+}
+#zap3 {
+	position:absolute;
+	font-size:52px;
+	font-family: grand_hotelregular;
+	color:#e50069;
+	 left: 341px;
+    position: absolute;
+    top: 105px;
+}
+#zap4 {
+	width:244px;
+	height:9px;
+	position:absolute;
+	background-image:url(../assets/gfx/zap3.png);
+	 left: 305px;
+    position: absolute;
+    top: 130px;
+}
+#zap5 {
+	position:absolute;
+	font-size:137px;
+	font-family: amatic_scbold;
+	color:#fdcd07;
+	left: 302px;
+    position: absolute;
+    top: 165px;
+}
+#zap6 {
+	width:257px;
+	height:29px;
+	position:absolute;
+	background-image:url(../assets/gfx/zap4.png);
+	 left: 295px;
+    position: absolute;
+    top: 296px;
+}
+#zap7 {
+	position:absolute;
+	font-size:63px;
+	font-family: amatic_scbold;
+	color:#e50069;
+	left: 301px;
+    position: absolute;
+    top: 345px;
+}
+#zap8 {
+	position:absolute;
+	font-size:52px;
+	font-family: grand_hotelregular;
+	color:#fdcd07;
+	left: 341px;
+    position: absolute;
+    top: 402px;
+}
+#zap9 {
+	width:244px;
+	height:9px;
+	position:absolute;
+	background-image:url(../assets/gfx/zap5.png);
+	 left: 301px;
+    position: absolute;
+    top: 427px;
+}
+#kop1 {
+	width:704px;
+	height:232px;
+	position:absolute;
+	background-image:url(../assets/gfx/kop1.png);
+	left: 71px;
+    position: absolute;
+    top: 167px;
+}
+#kop2 {
+	width:257px;
+	height:30px;
+	position:absolute;
+	background-image:url(../assets/gfx/kop2.png);
+	 left: 301px;
+    position: absolute;
+    top: 37px;
+}
+#kop3 {
+	position:absolute;
+	font-size:98px;
+	font-family: amatic_scbold;
+	color:#e50069;
+	 left: 301px;
+    position: absolute;
+    top: 85px;
+}
+#kop4 {
+	position:absolute;
+	font-size:52px;
+	font-family: grand_hotelregular;
+	color:#fdcd07;
+	 left: 386px;
+    position: absolute;
+    top: 182px;
+}
+#kop5 {
+	width:246px;
+	height:9px;
+	position:absolute;
+	background-image:url(../assets/gfx/kop3.png);
+	 left: 301px;
+    position: absolute;
+    top: 207px;
+}
+#kop6 {
+	position:absolute;
+	font-size:158px;
+	font-family: amatic_scbold;
+	color:#fdcd07;
+	left: 320px;
+    position: absolute;
+    top: 248px;
+}
+#kop7 {
+	width:327px;
+	height:127px;
+	position:absolute;
+	background-image:url(../assets/gfx/kop4.png);
+	left: 261px;
+    position: absolute;
+    top: 257px;
+}
+#kop8 {
+	width:220px;
+	height:53px;
+	position:absolute;
+	background-image:url(../assets/gfx/kop5.png);
+	left: 315px;
+    position: absolute;
+    top: 407px;
+}
+#fer1 {
+	width:279px;
+	height:243px;
+	position:absolute;
+	background-image:url(../assets/gfx/fer1.png);
+	left: 528px;
+    position: absolute;
+    top: 268px;
+}
+#fer2 {
+	width:250px;
+	height:28px;
+	position:absolute;
+	background-image:url(../assets/gfx/fer2.png);
+	left: 295px;
+    position: absolute;
+    top: 67px;
+}
+#fer3 {
+	position:absolute;
+	font-size:94px;
+	font-family: amatic_scbold;
+	color:#e50069;
+	left: 259px;
+    position: absolute;
+    top: 108px;
+}
+#fer4 {
+	width:270px;
+	height:76px;
+	position:absolute;
+	background-image:url(../assets/gfx/fer3.png);
+	left: 275px;
+    position: absolute;
+    top: 217px;
+}
+#fer5 {
+	color: #555555;
+    font-family: Arial;
+    font-size: 12px;
+    left: 193px;
+    line-height: 20px;
+    position: absolute;
+    top: 308px;
+    width: 460px;
+}
+#fer6 {
+	width:160px;
+	height:77px;
+	position:absolute;
+	background-image:url(../assets/gfx/fer4.png);
+	left: 346px;
+    position: absolute;
+    top: 500px;
+    cursor:pointer;
+    z-index:999;
+}

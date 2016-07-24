@@ -1,0 +1,16 @@
+body
+{       overflow-y: scroll;
+}
+#easeWrapper {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    border-right: 6px dashed #CCC;
+    border-left: 6px dashed #CCC;
+    top: 0;
+}
+#logo {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    background: url(http://rebutton.co/wp-content/uploads/2016/01/VECTOR_FIle-3-e1452970966884.png) no-repeat;
