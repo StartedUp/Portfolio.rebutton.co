@@ -29,6 +29,9 @@
         {
             background: url("images/img3.jpg") 100% / 150% no-repeat;
         }
+        #image4 {
+            background: url("images/img4.jpg") 100% / 150% no-repeat;
+        }
         .portfolioImg{
             display:inline-block;
             position: relative;
@@ -36,15 +39,39 @@
             width: 250px;
             height: 200px;
         }
+        .webDiv{
+            width: 100%;
+            height: 100%;
+        }
+        .formDiv{
+            width: 100%;
+            height: 100%;
+        }
+        .transationDiv{
+            width: 100%;
+            height: 100%;
+        }
+
+
     </style>
     </head>
 
     <body>
         <div id="logo"></div>
-            <a href="#"><div class="portfolioImg" id="image1"></div></a>
-            <a href="#"><div class="portfolioImg" id="image2"></div></a>
-            <a href="#"><div class="portfolioImg" id="image3"></div></a>
-
+        <div class="fullDiv">
+            <a href="#web"><div class="portfolioImg" id="image1"></div></a>
+            <a href="#form"><div class="portfolioImg" id="image2"></div></a>
+            <a href="#translation"><div class="portfolioImg" id="image3"></div></a>
+        </div>
+        <div id="web" class="webDiv">
+            <div class="portfolioImg" id="image4"></div>
+        </div>
+        <div id="form" class="formDiv">
+            <div class="portfolioImg" id="image4"></div>
+        </div>
+        <div id="translation" class="translationDiv">
+            <div class="portfolioImg" id="image4"></div>
+        </div>
     </body>
     <script>
 //we'll use a window.onload for simplicity, but typically it is best to use either jQuery's $(document).ready() or $(window).load() or cross-browser event listeners so that you're not limited to one.
