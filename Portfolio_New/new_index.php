@@ -23,7 +23,7 @@
 			background-size: 236px 75px;
 		}
 		#image1 {
-			background: url("images/bg5.gif") 100% / 150% no-repeat;
+			background: url("images/bg5.jpg") 100% / 150% no-repeat;
 		}
 		#image2
 		{
