@@ -9,6 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<style>
 		body {
+			background-color: hsla(66, 86%, 44%, 0.39); 
 			margin:0;padding:0;
 			overflow-x: hidden;
 			overflow-y: scroll;
@@ -41,6 +42,14 @@
 			border-radius:10%;
 			width: 250px;
 			height: 200px;
+			margin-top: 15%;
+		}
+		.portfolioImg1{
+			float: right;
+			position: relative;
+			border-radius:10%;
+			width: 250px;
+			height: 200px;
 			margin-top: 10%;
 		}
 		.fullDiv{
@@ -61,6 +70,15 @@
 			margin-bottom: 0px; margin-top: 0; text-align: center; 
 			text-shadow: 0 1px 1px #fff;
 		}
+		#h2
+		{ 
+			margin-top: 10%;
+			float: left;
+			color: black; font-family: "Great Vibes", cursive; font-size: 20px; 
+			line-height: 16px; font-weight: normal;  
+			text-shadow: 0 1px 1px #fff;
+			margin-left: 10%;
+		}
 		ul {
 			list-style-type: none;
 			margin-top: 0;
@@ -79,7 +97,6 @@
 			text-transform: none;
 		}
 		html {
-			background: url(images/bg.jpg) fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -94,60 +111,83 @@
 			height: 250px;
 			margin-top: 10%;
 		}
-		textarea{
+
+		.wrapper{
+			margin: 0 auto;
+			width: 100%;
+		}
+		.static{
+			width: 100%;
+			z-index: 2;
+			height: 100px;
+			position: fixed;
+		}
+		.header{
+			background-color: #8fd6d6;
+			height: 100px;
+		}
+		#para{
+			margin-top: 5%;
 			float: left;
-			margin-top: 15%;
 			margin-left: 5%;
 			height: 50%;
 			width: 50%;
 		}
 
 
-		</style>
-	</head>
-	<body>
-		<div id="logo"></div><br>
-		<div id="h1"><h1>Portfolio</h1>
-			<p>Just Rebutton And Get Your Job Done</p></div>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#web">Web Design</a></li>
-				<li><a href="#form">Digital Form</a></li>
-				<li><a href="#translation">Transulation</a></li>
-			</ul>
-			
-			<div class="fullDiv">
-				<a href="#web"><div style="max-width:25%" class="portfolioImg" id="image1">
-					<img class="mySlides" src="images/1.png" style="width:100%">
-					<img class="mySlides" src="images/2.png" style="width:100%">
-					<img class="mySlides" src="images/3.png" style="width:100%">
-				</div></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-				<a href="#form"><div style="max-width:25%" class="portfolioImg" id="image2">
-					<img class="mySlides" src="images/1.png" style="width:100%">
-					<img class="mySlides" src="images/2.png" style="width:100%">
-					<img class="mySlides" src="images/3.png" style="width:100%">
-				</div></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-				<a href="#translation"><div style="max-width:25%" class="portfolioImg" id="image3">
-					<img class="mySlides" src="images/1.png" style="width:100%">
-					<img class="mySlides" src="images/2.png" style="width:100%">
-					<img class="mySlides" src="images/3.png" style="width:100%">
-				</div></a>
-			</div>
-
-
-			<div id="web" class="fullDiv">
-				<div class="portfolioImg" id="image4">
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="static">
+			<div class="header">
+				<div id="logo"></div><br>
+				<div id="h1"><h1>Portfolio</h1>
+					<p>Just Rebutton And Get Your Job Done</p></div>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#web">Web Design</a></li>
+						<li><a href="#form">Digital Form</a></li>
+						<li><a href="#translation">Transulation</a></li>
+					</ul>
 				</div>
-				<textarea id="Description">Description</textarea>
 			</div>
-			<div id="form" class="fullDiv">
-				<div class="portfolioImg" id="image4"></div>
+		</div>
+
+		<div class="fullDiv">
+			<a href="#web"><div style="max-width:25%" class="portfolioImg" id="image1">
+				<img class="mySlides" src="images/1.png" style="width:100%">
+				<img class="mySlides" src="images/2.png" style="width:100%">
+				<img class="mySlides" src="images/3.png" style="width:100%">
+			</div></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+			<a href="#form"><div style="max-width:25%" class="portfolioImg" id="image2">
+				<img class="mySlides" src="images/1.png" style="width:100%">
+				<img class="mySlides" src="images/2.png" style="width:100%">
+				<img class="mySlides" src="images/3.png" style="width:100%">
+			</div></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+			<a href="#translation"><div style="max-width:25%" class="portfolioImg" id="image3">
+				<img class="mySlides" src="images/1.png" style="width:100%">
+				<img class="mySlides" src="images/2.png" style="width:100%">
+				<img class="mySlides" src="images/3.png" style="width:100%">
+			</div></a>
+		</div>
+
+
+		<div id="web" class="fullDiv">
+			<div class="portfolioImg1" id="image4">
 			</div>
-			<div id="translation" class="fullDiv">
-				<div class="portfolioImg" id="image4"></div>
-			</div>
-		</body>
-		<script>
+			<h2 id="h2">Web Design & Development</h2>
+			<div class="portfolioImg1"><img src="images/1.png"></div>
+			<p id="para">Description</p>
+		</div>
+		<div id="form" class="fullDiv">
+			<div class="portfolioImg" id="image4"></div>
+		</div>
+		<div id="translation" class="fullDiv">
+			<div class="portfolioImg" id="image4"></div>
+		</div>
+	</body>
+	<script>
 //we'll use a window.onload for simplicity, but typically it is best to use either jQuery's $(document).ready() or $(window).load() or cross-browser event listeners so that you're not limited to one.
 $(document).ready(function() {
 	var logo = document.getElementById("logo");
